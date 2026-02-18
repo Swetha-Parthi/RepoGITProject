@@ -27,6 +27,7 @@ public class BaseTest {
 		page = browser.newPage();
 		System.out.println("Browser Launched successfully");
 		page.navigate(baseUrl);
+		System.out.println("Navigated to URL successfully");
 
 		// Check whether URL launched successfully
 		PlaywrightAssertions.assertThat(page).hasURL(Pattern.compile("automationexercise"));
@@ -44,3 +45,4 @@ public class BaseTest {
 			pw.close();
 	}
 }
+
