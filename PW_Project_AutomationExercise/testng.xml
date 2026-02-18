@@ -1,0 +1,18 @@
+<suite name="PW_AE_Demo">
+	<test name="AE_Website_Test">
+		<classes>
+			<class name="test.SignupTests" />
+			<methods>
+				<include name="Test_AE01_TC01_Verify_NewUser_SignUp" />
+				<include name="Test_AE04__TC05_Signup_ExistingMail" />
+			</methods>
+			<class name="test.LoginTests" />
+			<methods>
+				<include name="Test_AE01_TC2_Verify_Login_CorrectDetails" />
+				<include name="Test_AE01_TC3_Verify_Login_Incorrect_MailPwd" />
+				<include name="Test_AE04_TC04_Verify_LogoutUser" />
+			</methods>
+		</classes>
+	</test>
+
+</suite>
